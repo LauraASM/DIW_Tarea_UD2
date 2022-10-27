@@ -45,7 +45,8 @@
         <input placeholder="Tu nombre" required="true" type="text" id="nombre">
         <br><label for="correo">Correo Electrónico:</label>
         <br>
-        <input placeholder="Tu correo electrónico" required="true" type="email" id="correo">
+        <!--añadimos pattern al correo electrónico-->
+        <input placeholder="Tu correo electrónico" required="true" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" id="correo">
         <br><label for="paginaPersonal">Página personal:</label>
         <br>
         <input placeholder="URL de tu página web personal" type="url" id="paginaPersonal">

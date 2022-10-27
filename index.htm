@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="es"><head>
+<html lang="es">
+
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Accesibilidad Ejemplos mal</title>
@@ -35,51 +37,50 @@
     <hr>
 
     <h2>Formularios - Ejemplo mal</h2>
-
+<!--Se añaden atributos placeholder y etiquetas label-->
     <form method="post" action="#">
         <p><strong>Información personal</strong></p>
-        Nombre:
+        <label for="nombre">Nombre:</label>
         <br>
-        <input required="true" type="text">
-        <br>Correo Electrónico:
+        <input placeholder="Tu nombre" required="true" type="text" id="nombre">
+        <br><label for="correo">Correo Electrónico:</label>
         <br>
-        <input required="true" type="email">
-        <br>Página personal:
+        <input placeholder="Tu correo electrónico" required="true" type="email" id="correo">
+        <br><label for="paginaPersonal">Página personal:</label>
         <br>
-        <input placeholder="URL de tu página web personal" type="url">
+        <input placeholder="URL de tu página web personal" type="url" id="paginaPersonal">
         <br>
 
         <p><strong>Otra información</strong></p>
-        Fecha:
+        <label for="fecha">Fecha:</label><br>
+        <input type="date" id="fecha">
+        <br><label for="mes">Mes:</label>
         <br>
-        <input type="date">
-        <br>Mes:
+        <input type="month" id="mes">
+        <br><label for="semana">Semana:</label>
         <br>
-        <input type="month">
-        <br>Semana:
+        <input type="week" id="semana">
+        <br><label for="tiempo">Tiempo:</label>
         <br>
-        <input type="week">
-        <br>Tiempo:
+        <input type="time" id="tiempo">
+        <br><label for="fechaTiempo">Fecha y tiempo:</label>
         <br>
-        <input type="time">
-        <br>Fecha y tiempo:
+        <input type="time" id="fechaTiempo">
+        <br><label for="numero">Número (min -10, max 10):</label>
         <br>
-        <input type="time">
-        <br>Número (min -10, max 10):
+        <input min="-10" max="10" value="0" type="number" id="numero">
+        <br><label for="intervalo">Intervalo (min 0, max 10):</label>
         <br>
-        <input min="-10" max="10" value="0" type="number">
-        <br>Intervalo (min 0, max 10):
+        <input value="50" type="range" id="intervalo">
+        <br><label for="telefono">Teléfono:</label>
         <br>
-        <input value="50" type="range">
-        <br>Teléfono:
+        <input type="tel" id="telefono">
+        <br><label for="busqueda">Búsqueda:</label>
         <br>
-        <input type="tel">
-        <br>Búsqueda:
+        <input type="search" id="busqueda">
+        <br><label for="color">Color Favorito:</label>
         <br>
-        <input type="search">
-        <br>Color Favorito:
-        <br>
-        <input value="#000000" type="color">
+        <input value="#000000" type="color" id="color">
 
         <p><strong>Controles</strong></p>
         <input value="Borrar" type="reset">
@@ -91,22 +92,31 @@
     <h2>Imágenes - Ejemplo mal</h2>
 
     <p>
-        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/anterior.html"><img src="Accesibilidad%20Ejemplos%20mal_files/flecha-izq.gif" alt="Flecha roja que apunta a la izquierda"></a>
+        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/anterior.html"><img
+                src="Accesibilidad%20Ejemplos%20mal_files/flecha-izq.gif"
+                alt="Flecha roja que apunta a la izquierda"></a>
         <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/indice.html">Índice</a>
-        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/siguiente.html"><img src="Accesibilidad%20Ejemplos%20mal_files/flecha-der.gif" alt="Flecha roja que apunta a la derecha"></a>
+        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/siguiente.html"><img
+                src="Accesibilidad%20Ejemplos%20mal_files/flecha-der.gif" alt="Flecha roja que apunta a la derecha"></a>
     </p>
 
     <p>
         Menu:
         <br>
         <br>
-        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/unete.html"><img src="Accesibilidad%20Ejemplos%20mal_files/logo.png" alt="Únete">Únete</a>
+        <!--Dado que las siguientes imágenes son solo un acompañamiento decorativo a los enlaces, 
+            podemos prescindir del texto alternativo-->
+        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/unete.html"><img
+                src="Accesibilidad%20Ejemplos%20mal_files/logo.png">Únete</a>
         <br>
-        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/equipo.html"><img src="Accesibilidad%20Ejemplos%20mal_files/logo.png" alt="Equipo">Equipo</a>
+        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/equipo.html"><img
+                src="Accesibilidad%20Ejemplos%20mal_files/logo.png">Equipo</a>
         <br>
-        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/contacto.html"><img src="Accesibilidad%20Ejemplos%20mal_files/logo.png" alt="Contacto">Contacto</a>
+        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/contacto.html"><img
+                src="Accesibilidad%20Ejemplos%20mal_files/logo.png">Contacto</a>
         <br>
-        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/siguenos.html"><img src="Accesibilidad%20Ejemplos%20mal_files/logo.png" alt="Síguenos">Síguenos</a>
+        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/siguenos.html"><img
+                src="Accesibilidad%20Ejemplos%20mal_files/logo.png">Síguenos</a>
     </p>
 
     <p>Teléfono de contacto:<img src="Accesibilidad%20Ejemplos%20mal_files/telefono.gif" alt="Teléfono de contacto"></p>
@@ -114,16 +124,23 @@
     <hr>
 
     <h2>Mapas de imágenes - Ejemplo mal</h2>
-
-    <img src="Accesibilidad%20Ejemplos%20mal_files/img-map-area.png" usemap="#map1" height="480" width="948" border="0">
+<!--Se añade atributo alt a la imagen-->
+    <img src="Accesibilidad%20Ejemplos%20mal_files/img-map-area.png" usemap="#map1" height="480" width="948" border="0"
+        alt="Descripción Hackathon Lovers">
 
     <map name="map1">
-        <area shape="rect" coords="18,25,221,63" href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/index.html" alt="Inicio">
-        <area shape="rect" coords="337,40,396,64" href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/unete.html" alt="Unete">
-        <area shape="rect" coords="424,40,491,65" href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/equipo.html" alt="Equipo">
-        <area shape="rect" coords="520,41,612,64" href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/contacto.html" alt="Contacto">
-        <area shape="rect" coords="641,40,728,65" href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/siguenos.html" alt="Siguenos">
-        <area shape="rect" coords="16,344,400,397" href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/meetup.html" alt="Meetup">
+        <area shape="rect" coords="18,25,221,63"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/index.html" alt="Inicio">
+        <area shape="rect" coords="337,40,396,64"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/unete.html" alt="Unete">
+        <area shape="rect" coords="424,40,491,65"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/equipo.html" alt="Equipo">
+        <area shape="rect" coords="520,41,612,64"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/contacto.html" alt="Contacto">
+        <area shape="rect" coords="641,40,728,65"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/siguenos.html" alt="Siguenos">
+        <area shape="rect" coords="16,344,400,397"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/meetup.html" alt="Meetup">
     </map>
 
     <hr>
@@ -131,100 +148,105 @@
     <h2>Enlace - Ejemplo mal</h2>
 
     <h3>A mi hija mayor se le ha caido su primer diente</h3>
-
+<!--Utilizamos el atributo aria-label, que será lo que reproduzca el lector de pantalla-->
     <p>Estabamos desayunando cuando de repente sucedió.
-        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/noticia-hija-mayor.html">Más información.</a></p>
+        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/noticia-hija-mayor.html" 
+        aria-label="Ir a A mi hija mayor se le ha caido su primer diente">Más información.</a>
+    </p>
 
     <h3>A mi hija pequeña le ha salido su primera muela</h3>
 
     <p>Después de comer, la pequeña dijo que le molestaba la boca.
-        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/noticia-hija-mayor.html">Más información.</a></p>
+        <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/noticia-hija-mayor.html"
+        aria-label="Ir a A mi hija pequeña le ha salido su primera muela">Más información.</a>
+    </p>
 
     <hr>
 
     <h2>Organización - Ejemplo mal</h2>
 
-    <big><b>Nombre de la empresa</b></big>
+    <!--En vez de una tabla, lo correcto sería utilizar etiquetas de título para organizar la información-->
+
+    <h3>Nombre de la empresa</h3>
     <p>Eslogan de la empresa</p>
 
-    <table>
-        <tbody><tr>
-            <td><b>Noticias</b></td>
-        </tr>
-        <tr>
-            <td><small><b>Noticia 1</b></small></td>
-        </tr>
-        <tr>
-            <td><small>Desarrollo de la noticia 1</small></td>
-        </tr>
-        <tr>
-            <td><small><b>Noticia 2</b></small></td>
-        </tr>
-        <tr>
-            <td><small>Desarrollo de la noticia 2</small></td>
-        </tr>
-    </tbody></table>
+    <h4>Noticias</h4>
+    <h5>Noticia 1</h5>
+    <p>Desarrollo de la noticia 1</p>
+
+    <h5>Noticia 2</h5>
+    <p>Desarrollo de la noticia 2</p>
 
     <hr>
 
     <h2>Diagramas - Ejemplo mal</h2>
 
-    <img src="Accesibilidad%20Ejemplos%20mal_files/disenio-centrado-usuario.png" alt="Diagrama de Diseño Centrado en el Usuario">
+    <img src="Accesibilidad%20Ejemplos%20mal_files/disenio-centrado-usuario.png"
+        alt="Diagrama de Diseño Centrado en el Usuario">
 
     <hr>
 
     <h2>Tablas - Ejemplo mal</h2>
 
-    <table border="1">
-        <tbody><tr>
-            <td></td>
-            <td><strong>Lunes</strong></td>
-            <td><strong>Martes</strong></td>
-            <td><strong>Miércoles</strong></td>
-            <td><strong>Jueves</strong></td>
-            <td><strong>Viernes</strong></td>
-        </tr>
-        <tr>
-            <td><strong>10:00</strong></td>
-            <td>Matemáticas</td>
-            <td>Matemáticas</td>
-            <td>Matemáticas</td>
-            <td>Matemáticas</td>
-            <td>Matemáticas</td>
-        </tr>
-        <tr>
-            <td><strong>11:00</strong></td>
-            <td>Lengua</td>
-            <td>Lengua</td>
-            <td>Lengua</td>
-            <td>Lengua</td>
-            <td>Lengua</td>
-        </tr>
-        <tr>
-            <td><strong>12:00</strong></td>
-            <td>C.Sociales</td>
-            <td>C.Naturales</td>
-            <td>C.Sociales</td>
-            <td>C.Naturales</td>
-            <td>Deporte</td>
-        </tr>
-        <tr>
-            <td><strong>13:00</strong></td>
-            <td>Inglés</td>
-            <td>Inglés</td>
-            <td>Inglés</td>
-            <td>Inglés</td>
-            <td>Músic</td>
-        </tr>
-    </tbody></table>
+    <!--Se añaden filas y columnas de encabezado con su correspondiente id.
+    Se añaden los atributo id y summary en table, y etiqueta caption
+    -->
+    <table id="horario" border="1" summary="5 columnas (días de la semana) y 4 filas (horas)">
+        <caption>Horario de clase</caption>
+        <thead>
+            <tr>
+                <th id="dias"></th>
+                <th id="columnaLunes">Lunes</th>
+                <th id="columnaMartes">Martes</th>
+                <th id="columnaMiercoles">Miércoles</th>
+                <th id="columnaJueves">Jueves</th>
+                <th id="columnaViernes">Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="filaHora10">10:00</th>
+                <td>Matemáticas</td>
+                <td>Matemáticas</td>
+                <td>Matemáticas</td>
+                <td>Matemáticas</td>
+                <td>Matemáticas</td>
+            </tr>
+            <tr>
+                <th id="filaHora11">11:00</th>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+            </tr>
+            <tr>
+                <th id="filaHora12">12:00</th>
+                <td>C.Sociales</td>
+                <td>C.Naturales</td>
+                <td>C.Sociales</td>
+                <td>C.Naturales</td>
+                <td>Deporte</td>
+            </tr>
+            <tr>
+                <th id="filaHora13">13:00</th>
+                <td>Inglés</td>
+                <td>Inglés</td>
+                <td>Inglés</td>
+                <td>Inglés</td>
+                <td>Músic</td>
+            </tr>
+        </tbody>
+    </table>
 
     <p>En esta tabla puede verse el horario de la clase 3ºA</p>
 
     <hr>
 
     <h2>Contraste - Ejemplo Mal</h2>
-
+<!--En la hoja CSS, cambiamos color texto a blanco y mantenemos fondo oscuro-->
     <div class="importante">Este texto es importante</div>
 
-    
-</body></html>
+</body>
+
+</html>

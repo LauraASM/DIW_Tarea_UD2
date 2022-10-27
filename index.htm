@@ -118,8 +118,8 @@
         <a href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/siguenos.html"><img
                 src="Accesibilidad%20Ejemplos%20mal_files/logo.png">Síguenos</a>
     </p>
-
-    <p>Teléfono de contacto:<img src="Accesibilidad%20Ejemplos%20mal_files/telefono.gif" alt="Teléfono de contacto"></p>
+<!--No tiene sentido una imagen con el número de teléfono. Se puede escribir el número en el párrafo-->
+    <p>Teléfono de contacto: 999123456</p>
 
     <hr>
 
@@ -188,14 +188,14 @@
 
     <h2>Tablas - Ejemplo mal</h2>
 
-    <!--Se añaden filas y columnas de encabezado con su correspondiente id.
-    Se añaden los atributo id y summary en table, y etiqueta caption
-    -->
+    <!--Se añaden los atributos id y summary, y etiqueta caption-->
     <table id="horario" border="1" summary="5 columnas (días de la semana) y 4 filas (horas)">
         <caption>Horario de clase</caption>
+        <!--Se añaden filas y columnas de encabezado con su correspondiente id.-->
         <thead>
             <tr>
-                <th id="dias"></th>
+                <!--Se añade un texto explicativo a la primera celda-->
+                <th id="diasHoras">Días/Horas</th>
                 <th id="columnaLunes">Lunes</th>
                 <th id="columnaMartes">Martes</th>
                 <th id="columnaMiercoles">Miércoles</th>
